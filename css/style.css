@@ -1,0 +1,126 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.f-row{
+  margin: 0;
+}
+.h-max {
+  height: 100%;
+}
+
+.calender {
+}
+.fa-bars {
+  display: none;
+}
+td:hover{
+  cursor: pointer;
+}
+
+  th{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    
+  }
+.overflow-auto{
+  overflow: auto;
+}
+.only-mobile{
+  display: none;
+}
+
+.vat{
+  background-color: #E83E8C !important;
+  color: white;
+  border-radius: 10px;
+  border-right: 5px solid white;
+  border-left: 5px solid white;
+}
+.paye{
+  background-color: #6F42C1 !important;
+  color: white;
+  border-radius: 10px;
+  border-right: 5px solid white;
+  border-left: 5px solid white;
+}
+.yearend{
+  background-color: rgb(66, 193, 155) !important;
+  color: white;
+  border-radius: 10px;
+  border-right: 5px solid white;
+  border-left: 5px solid white;
+}
+.normal{
+  background-color: #007BFF;
+    color: white;
+  border-radius: 10px;
+  border-right: 5px solid white;
+  border-left: 5px solid white;
+}
+.up-coming-events-container{
+  height: 70% !important;
+}
+.up-coming-events{
+  height: 90%;
+  overflow: auto;
+}
+.sidebar-content{
+  overflow-y: auto;
+}
+.extra-text{
+  color: green !important;
+}
+a{
+  text-decoration: none;
+}
+.month-row{
+overflow: auto;
+}
+::-webkit-scrollbar{
+
+}
+::-webkit-scrollbar-thumb{
+  background-color: gray;
+
+      border-radius: 100px !important;
+          border-radius: 10px;
+
+}
+@media (max-width: 772px) {
+  ::-webkit-scrollbar{
+display: none;
+}
+.side-f{
+  padding: 0;
+  padding-left: 5px;
+}
+  .sidebar-content {
+    display: none;
+  }
+  .fa-bars {
+    display: block;
+    font-size: 20px;
+  }
+  body {
+    position: relative;
+  }
+  .sidebar-open {
+    display: block;
+    position: absolute !important;
+    top: 0%;
+    z-index: 10;
+    width: 300px !important;
+    height: 100%;
+    background-color: #6c757d;
+  }
+  .only-mobile{
+display: block;
+  }
+  .todayDate{
+font-size: 40px;
+  }
+}
