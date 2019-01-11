@@ -107,7 +107,7 @@ function populateDates(data) {
 
     }
     const template = `
-<div class="col-lg-6 col-12 mt-3 pl-1" style="overflow: hidden;">
+<div class="col-12 col-lg-6  mt-3 pl-1" style="overflow: hidden;">
                     <div class="border rounded pt-1">
                         <p class="month-name text-primary ml-3 h3">${templateData.monthName}</p>
                         <table class="table text-center mb-0">
@@ -131,7 +131,6 @@ function populateDates(data) {
                                     <td>${templateData.td[4]}</td>
                                     <td>${templateData.td[5]}</td>
                                     <td>${templateData.td[6]}</td>
-
                                 </tr>
                                 <tr class="week">
                                     <td>${templateData.td[7]}</td>
@@ -141,7 +140,6 @@ function populateDates(data) {
                                     <td>${templateData.td[11]}</td>
                                     <td>${templateData.td[12]}</td>
                                     <td>${templateData.td[13]}</td>
-
                                 </tr>
                                 <tr class="week">
                                     <td>${templateData.td[14]}</td>
@@ -151,7 +149,6 @@ function populateDates(data) {
                                     <td>${templateData.td[18]}</td>
                                     <td>${templateData.td[19]}</td>
                                     <td>${templateData.td[20]}</td>
-
                                 </tr>
                                 <tr class="week">
                                     <td>${templateData.td[21]}</td>
@@ -161,7 +158,6 @@ function populateDates(data) {
                                     <td>${templateData.td[25]}</td>
                                     <td>${templateData.td[26]}</td>
                                     <td>${templateData.td[27]}</td>
-
                                 </tr>
                                 <tr class="week">
                                     <td>${templateData.td[28]}</td>
@@ -171,7 +167,6 @@ function populateDates(data) {
                                     <td>${templateData.td[32]}</td>
                                     <td>${templateData.td[33]}</td>
                                     <td>${templateData.td[34]}</td>
-
                                 </tr>
                                 <tr class="week">
                                     <td>${templateData.td[35]}</td>
@@ -181,15 +176,11 @@ function populateDates(data) {
                                     <td>${templateData.td[39]}</td>
                                     <td>${templateData.td[40]}</td>
                                     <td></td>
-
                                 </tr>
                                 
-
-
                             </tbody>
                         </table>
                     </div>
-
                 </div>`
     const month_row = document.getElementsByClassName('month-row')[0];
 
@@ -529,7 +520,14 @@ const importantDates = [
 importantDates.forEach(date => setColor(date.month, date.day, date.year, date.type))
 
 // set updates
-importantDates.forEach(date => {
+function convertDate(_temp) {
+    return parseInt(_temp.getFullYear() + (_temp.getMonth() < 10 ? "0" + _temp.getMonth() : _temp.getMonth().toString()) + (_temp.getDate() < 10 ? "0" + _temp.getDate() : _temp.getDate().toString()));
+}
+const gdate = convertDate(new Date())
+importantDates.filter(date => {
+    const __date = convertDate(new Date(date.year, date.month, date.day))
+    return (__date - gdate >= 0 ? true : false);
+}).forEach(date => {
     let updateTemp = '';
     if (date.type == 'v') {
         updateTemp = `
@@ -541,7 +539,7 @@ importantDates.forEach(date => {
                         </p>
                     </div>
                     `;
-    } else if (date.type == 'p'){
+    } else if (date.type == 'p') {
         updateTemp = `
                     <div class="media text-muted pt-3">
                         <img src="images/c3.svg" alt="" class="mr-2 rounded">
@@ -550,7 +548,7 @@ importantDates.forEach(date => {
                             ${date.name}
                         </p>
                     </div>`;
-    }else {
+    } else {
         updateTemp = `
                     <div class="media text-muted pt-3">
                         <img src="images/c2.svg" alt="" class="mr-2 rounded">
@@ -570,10 +568,18 @@ const prevChosen = {
     lastday: 31,
 }
 let inner = '';
+let yTime = 0;
 function selectYearEnd(n) {
+    yTime++;
+    if(yTime >1) {
+        setTimeout(() => {
+            openSideBar();
+        }, 500);
+    }
+
+
     n = parseInt(n);
     const next6month = (n + 6 > 11 ? n + 6 - 12 : n + 6)
-    console.log('-----' + next6month)
     const lastday = new Date(2019, next6month + 1, 0).getDate()
 
     setColor(prevChosen.next6month, prevChosen.lastday, 2019, 'reset')
@@ -595,5 +601,3 @@ function selectYearEnd(n) {
                 </div> ${inner}`
 }
 selectYearEnd(11)
-
-

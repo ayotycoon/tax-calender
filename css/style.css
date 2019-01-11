@@ -81,7 +81,7 @@ a{
 overflow: auto;
 }
 ::-webkit-scrollbar{
-
+width: 5px;
 }
 ::-webkit-scrollbar-thumb{
   background-color: gray;
@@ -122,5 +122,8 @@ display: block;
   }
   .todayDate{
 font-size: 40px;
+  }
+  .extra-text{
+    font-size: 20px;
   }
 }
