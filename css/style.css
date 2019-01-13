@@ -32,7 +32,18 @@ td:hover{
 .only-mobile{
   display: none;
 }
-
+.vat-b{
+   background-color: #E83E8C !important;
+   width:100%;
+}
+.paye-b{
+  background-color: #6F42C1 !important;
+  width:100%;
+}
+.normal-b{
+  background-color: #007BFF;
+  width:100%;
+}
 .vat{
   background-color: #E83E8C !important;
   color: white;
@@ -90,6 +101,14 @@ width: 5px;
           border-radius: 10px;
 
 }
+.border-m{
+  border-left: 3px solid white;
+}
+.keys{
+  text-decoration: underline;
+}
+
+
 @media (max-width: 772px) {
   ::-webkit-scrollbar{
 display: none;

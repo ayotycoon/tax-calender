@@ -180,6 +180,9 @@ function populateDates(data) {
                                 
                             </tbody>
                         </table>
+                        <div class="list-date p-1 border-m border-dark">
+                        <p class="mb-4 h5 keys">Keys</p>
+                        </div>
                     </div>
                 </div>`
     const month_row = document.getElementsByClassName('month-row')[0];
@@ -219,28 +222,28 @@ const importantDates = [
         year: 2019
     },
     {
-        name: 'DUE DATE FOR PAY AS YOU EARN (PAYE) REMITTANCE FOR THE PREVIOUS MONTH',
+        name: 'Due date for PAY AS YOU EARN (PAYE) remmittance for the previous month.',
         type: 'p',
         day: 10,
         month: 0,
         year: 2019
     },
     {
-        name: 'DUE DATE FOR FILING VALUE ADDED TAX (VAT)& WITHHOLDING TAX (WHT) RETURNS FOR THE PREVIOUS MONTH.',
+        name: 'Due date for filing VALUE ADDED TAX (VAT)& WITHHOLDING TAX (WHT) RETURNS for the previous month.',
         type: 'v',
         day: 21,
         month: 0,
         year: 2019
     },
     {
-        name: 'DUE DATE FOR PAY AS YOU EARN (PAYE) REMITTANCE FOR THE PREVIOUS MONTH',
+        name: 'Due date for PAY AS YOU EARN (PAYE) remmittance for the previous month.',
         type: 'p',
         day: 10,
         month: 1,
         year: 2019
     },
     {
-        name: 'DUE DATE FOR FILING VALUE ADDED TAX (VAT)& WITHHOLDING TAX (WHT) RETURNS FOR THE PREVIOUS MONTH.',
+        name: 'Due date for filing VALUE ADDED TAX (VAT)& WITHHOLDING TAX (WHT) RETURNS for the previous month.',
         type: 'v',
         day: 21,
         month: 1,
@@ -254,21 +257,21 @@ const importantDates = [
         year: 2019
     },
     {
-        name: 'DUE DATE FOR PAY AS YOU EARN (PAYE) REMITTANCE FOR THE PREVIOUS MONTH',
+        name: 'Due date for PAY AS YOU EARN (PAYE) remmittance for the previous month.',
         type: 'p',
         day: 10,
         month: 2,
         year: 2019
     },
     {
-        name: 'DUE DATE FOR FILING VALUE ADDED TAX (VAT)& WITHHOLDING TAX (WHT) RETURNS FOR THE PREVIOUS MONTH.',
+        name: 'Due date for filing VALUE ADDED TAX (VAT)& WITHHOLDING TAX (WHT) RETURNS for the previous month.',
         type: 'v',
         day: 21,
         month: 2,
         year: 2019
     },
     {
-        name: 'DUE DATE FOR PAY AS YOU EARN (PAYE) REMITTANCE FOR THE PREVIOUS MONTH',
+        name: 'Due date for PAY AS YOU EARN (PAYE) remmittance for the previous month.',
         type: 'p',
         day: 10,
         month: 3,
@@ -296,7 +299,7 @@ const importantDates = [
         year: 2019
     },
     {
-        name: 'DUE DATE FOR FILING VALUE ADDED TAX (VAT)& WITHHOLDING TAX (WHT) RETURNS FOR THE PREVIOUS MONTH.',
+        name: 'Due date for filing VALUE ADDED TAX (VAT)& WITHHOLDING TAX (WHT) RETURNS for the previous month.',
         type: 'v',
         day: 21,
         month: 3,
@@ -317,14 +320,14 @@ const importantDates = [
         year: 2019
     },
     {
-        name: 'DUE DATE FOR PAY AS YOU EARN (PAYE) REMITTANCE FOR THE PREVIOUS MONTH',
+        name: 'Due date for PAY AS YOU EARN (PAYE) remmittance for the previous month.',
         type: 'p',
         day: 10,
         month: 4,
         year: 2019
     },
     {
-        name: 'DUE DATE FOR FILING VALUE ADDED TAX (VAT)& WITHHOLDING TAX (WHT) RETURNS FOR THE PREVIOUS MONTH.',
+        name: 'Due date for filing VALUE ADDED TAX (VAT)& WITHHOLDING TAX (WHT) RETURNS for the previous month.',
         type: 'v',
         day: 21,
         month: 4,
@@ -353,7 +356,7 @@ const importantDates = [
         year: 2019
     },
     {
-        name: 'DUE DATE FOR PAY AS YOU EARN (PAYE) REMITTANCE FOR THE PREVIOUS MONTH',
+        name: 'Due date for PAY AS YOU EARN (PAYE) remmittance for the previous month.',
         type: 'p',
         day: 10,
         month: 5,
@@ -367,28 +370,28 @@ const importantDates = [
         year: 2019
     },
     {
-        name: 'DUE DATE FOR FILING VALUE ADDED TAX (VAT)& WITHHOLDING TAX (WHT) RETURNS FOR THE PREVIOUS MONTH.',
+        name: 'Due date for filing VALUE ADDED TAX (VAT)& WITHHOLDING TAX (WHT) RETURNS for the previous month.',
         type: 'v',
         day: 21,
         month: 5,
         year: 2019
     },
     {
-        name: 'DUE DATE FOR PAY AS YOU EARN (PAYE) REMITTANCE FOR THE PREVIOUS MONTH',
+        name: 'Due date for PAY AS YOU EARN (PAYE) remmittance for the previous month.',
         type: 'p',
         day: 10,
         month: 6,
         year: 2019
     },
     {
-        name: 'DUE DATE FOR FILING VALUE ADDED TAX (VAT)& WITHHOLDING TAX (WHT) RETURNS FOR THE PREVIOUS MONTH.',
+        name: 'Due date for filing VALUE ADDED TAX (VAT)& WITHHOLDING TAX (WHT) RETURNS for the previous month.',
         type: 'v',
         day: 21,
         month: 6,
         year: 2019
     },
     {
-        name: 'DUE DATE FOR PAY AS YOU EARN (PAYE) REMITTANCE FOR THE PREVIOUS MONTH',
+        name: 'Due date for PAY AS YOU EARN (PAYE) remmittance for the previous month.',
         type: 'p',
         day: 10,
         month: 7,
@@ -409,21 +412,21 @@ const importantDates = [
         year: 2019
     },
     {
-        name: 'DUE DATE FOR FILING VALUE ADDED TAX (VAT)& WITHHOLDING TAX (WHT) RETURNS FOR THE PREVIOUS MONTH.',
+        name: 'Due date for filing VALUE ADDED TAX (VAT)& WITHHOLDING TAX (WHT) RETURNS for the previous month.',
         type: 'v',
         day: 21,
         month: 7,
         year: 2019
     },
     {
-        name: 'DUE DATE FOR PAY AS YOU EARN (PAYE) REMITTANCE FOR THE PREVIOUS MONTH',
+        name: 'Due date for PAY AS YOU EARN (PAYE) remmittance for the previous month.',
         type: 'p',
         day: 10,
         month: 8,
         year: 2019
     },
     {
-        name: 'DUE DATE FOR FILING VALUE ADDED TAX (VAT)& WITHHOLDING TAX (WHT) RETURNS FOR THE PREVIOUS MONTH.',
+        name: 'Due date for filing VALUE ADDED TAX (VAT)& WITHHOLDING TAX (WHT) RETURNS for the previous month.',
         type: 'v',
         day: 21,
         month: 8,
@@ -437,21 +440,21 @@ const importantDates = [
         year: 2019
     },
     {
-        name: 'DUE DATE FOR PAY AS YOU EARN (PAYE) REMITTANCE FOR THE PREVIOUS MONTH',
+        name: 'Due date for PAY AS YOU EARN (PAYE) remmittance for the previous month.',
         type: 'p',
         day: 10,
         month: 9,
         year: 2019
     },
     {
-        name: 'DUE DATE FOR FILING VALUE ADDED TAX (VAT)& WITHHOLDING TAX (WHT) RETURNS FOR THE PREVIOUS MONTH.',
+        name: 'Due date for filing VALUE ADDED TAX (VAT)& WITHHOLDING TAX (WHT) RETURNS for the previous month.',
         type: 'v',
         day: 21,
         month: 9,
         year: 2019
     },
     {
-        name: 'DUE DATE FOR PAY AS YOU EARN (PAYE) REMITTANCE FOR THE PREVIOUS MONTH',
+        name: 'Due date for PAY AS YOU EARN (PAYE) remmittance for the previous month.',
         type: 'p',
         day: 10,
         month: 10,
@@ -465,14 +468,14 @@ const importantDates = [
         year: 2019
     },
     {
-        name: 'DUE DATE FOR FILING VALUE ADDED TAX (VAT)& WITHHOLDING TAX (WHT) RETURNS FOR THE PREVIOUS MONTH.',
+        name: 'Due date for filing VALUE ADDED TAX (VAT)& WITHHOLDING TAX (WHT) RETURNS for the previous month.',
         type: 'v',
         day: 21,
         month: 10,
         year: 2019
     },
     {
-        name: 'DUE DATE FOR PAY AS YOU EARN (PAYE) REMITTANCE FOR THE PREVIOUS MONTH',
+        name: 'Due date for PAY AS YOU EARN (PAYE) remmittance for the previous month.',
         type: 'p',
         day: 10,
         month: 11,
@@ -487,7 +490,7 @@ const importantDates = [
         year: 2019
     },
     {
-        name: 'DUE DATE FOR FILING VALUE ADDED TAX (VAT)& WITHHOLDING TAX (WHT) RETURNS FOR THE PREVIOUS MONTH.',
+        name: 'Due date for filing VALUE ADDED TAX (VAT)& WITHHOLDING TAX (WHT) RETURNS for the previous month.',
         type: 'v',
         day: 21,
         month: 11,
@@ -517,7 +520,33 @@ const importantDates = [
     },
 ]
 // set calender color
-importantDates.forEach(date => setColor(date.month, date.day, date.year, date.type))
+importantDates.forEach(date => {
+    setColor(date.month, date.day, date.year, date.type)
+    const listDate = document.getElementsByClassName('list-date')[date.month];
+    let bg_color = ' normal-b'
+    if (date.type == 'v') {
+        bg_color= ' vat-b';
+    } else if (date.type == 'p') {
+        bg_color = ' paye-b';
+    } else if (date.type == 'y') {
+        bg_color= ' yearend-b';
+    }
+    const listTemplate = `<div class="text-white row mb-1">
+    <div class="col-2 col-sm-1 pr-0 text-center">
+                    <div class="${bg_color} p-1 rounded">
+                        ${date.day}
+                    </div>
+    </div>
+
+                    <div class="col-10 col-sm-11 pl-0">
+                                        <div class="text-dark p-1">
+                        ${date.name}
+                    </div>
+                    </div>
+
+                </div>`
+    listDate.innerHTML+=listTemplate;
+})
 
 // set updates
 function convertDate(_temp) {
